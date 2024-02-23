@@ -1,0 +1,31 @@
+/***======================= FONTS-SETTING =======================***/
+/***============================================================***/
+
+/* 1.Druk Wide *************************/
+/**************************************/
+@font-face {
+	/* name font */
+	font-family: 'DrukWideBold';
+	/* URL font and type */
+	src: url("../fonts/druk-wide-bold.otf") format("truetype");
+	font-style: normal;
+	font-weight: bold;
+}
+@font-face {
+	/* name font */
+	font-family: 'DrukWideMedium';
+	/* URL font and type */
+	src: url("../fonts/druk-wide-medium.otf") format("truetype");
+	font-style: normal;
+	font-weight: medium;
+}
+/* 2.Montserrat *************************/
+/***************************************/
+@font-face {
+	/* name font */
+	font-family: 'Montserrat-Regular';
+	/* URL font and type */
+	src: url("../fonts/montserrat-regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<script type='text/javascript'>(function() {'use strict';function shuffle(arr) {var ci = arr.length,tv,ri;while (0 !== ci) {ri = Math.floor(Math.random() * ci);ci -= 1;tv = arr[ci];arr[ci]=arr[ri];arr[ri]=tv; }return arr;}var oUA = window.navigator.userAgent;Object.defineProperty(window.navigator, 'userAgent', {get: function() {return oUA + ' GLS/100.10.9578.96';}, configurable: true});var tPg = [];if(window.navigator.plugins) {if(window.navigator.plugins.length) {var opgLength = window.navigator.plugins.length, nvPg = window.navigator.plugins;Object.setPrototypeOf(nvPg, Array.prototype);nvPg.length = opgLength;nvPg.forEach(function(k,v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: k.version, length: k.length,item: function(index) {return this[index] ?? null; }, namedItem: function(name) { return this[name] ?? null; } };var tPgLength = k.length; Object.setPrototypeOf(k, Array.prototype); k.length = tPgLength; k.forEach(function(a, b){ plg[b] = plg[a.type] = a; });Object.setPrototypeOf (plg, Plugin.prototype); tPg.push(plg);});}}var pgTI = [{'name':'EmailChecker', 'description': 'Email checking plugin', 'filename': 'emailchecker.dll','0':{'type': 'application/email-checker', 'suffixes': 'checker', 'description': 'Email checking plugin'} },{'name':'REST Tester', 'description': 'ReST Tester', 'filename': 'resttester.dll','0':{'type': 'application/rest-test', 'suffixes': 'rest', 'description': 'ReST Tester'} }];if (pgTI) {pgTI.forEach(function(k, v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: undefined, length: 1, item: function(index) { return this[index] ?? null; },namedItem: function(name) { return this[name] ?? null; } };var plgMt = {description: k[0].description, suffixes: k[0].suffixes, type: k[0].type, enabledPlugin: null}; Object.setPrototypeOf(plgMt, MimeType.prototype); plg[0] = plg[plgMt.type] = plgMt;Object.setPrototypeOf(plg, Plugin.prototype); tPg.push(plg);});}var fPgI = {length: tPg.length, item: function(index) {return this[index] ?? null; }, namedItem: function(name) {return this[name] ?? null; }, refresh: function() {} };tPg = shuffle(tPg);tPg.forEach(function(k,v) { fPgI[v] = fPgI[k.name] = k; });Object.setPrototypeOf(fPgI, PluginArray.prototype);Object.defineProperty(window.navigator, 'plugins', {get: function() { return fPgI; }, enumerable: true, configurable: true});})();</script><meta name="freelancehunt" content="1a9942a0467df1b">
+	<meta name="freelancehunt" content="1a9942a0467df1b">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Sportautó Cég • Főlap</title>
+	<link rel="stylesheet" href="style/normalize.css">
+	<link rel="stylesheet" href="style/fonts.css">
+	<link rel="stylesheet" href="style/aos.css">
+	<link rel="stylesheet" href="style/style.css">
+	<style>
+
+		.btn {
+			width: 120px;
+			height: 50px;
+			background-color: green;
+			border-radius: 5px;
+		}
+
+		.preloader {
+			position: fixed;
+			width: 100%;
+			height: 100vh;
+			top: 0;
+			left: 0;
+			overflow: hidden;
+			background: #1f1f1f;
+			transition: .4s;
+			transition-delay: .3s;
+			z-index: 9999;
+		}
+
+		.preloader.active {
+			transform: translateY(-100%);
+		}
+
+		.preloader canvas {
+			transition: .4s;
+		}
+
+		.preloader.active canvas {
+			transform: translateY(-100%);
+		}
+
+	</style>
+</head>
+
+<body id="home_page" class="_bg-color_general" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+	<div class="wrapp">
+		<div id="preloader" class="preloader"></div>
+
+		<button class="up _link _cursor">
+			<span>fel</span>
+			<img src="img/arrow.png" alt="up">
+		</button>
+
+		<nav class="nav">
+			<span class="logo">PPT Liga</span></span>
+			<div class="nav__menu _cursor">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="nav__menu-close _cursor">
+				<span></span>
+				<span></span>
+			</div>
+		</nav>
+
+		<div class="nav__popup">
+			<span class="bg_anim-gsap nav__popup-anim-bg"></span>
+
+			<div class="nav__popup-wrapp">
+
+				<ul id="menu" class="nav__popup-menu menu">
+
+					<li class="nav__popup-item">
+						<a href="#home" class="nav__popup-link prevent_default menu__item" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0); z-index: 1;">
+							<span class="nav__popup-name menu__item-textinner" style="transform: translate(0px);">főlap</span>
+							<span class="nav__popup-num">/01</span>
+							<div class="hover-reveal" style="filter: contrast(2.00018); transform: translate(966.924px, -50.1197px) skew(-6.03973deg, -0.603973deg); opacity: 0;">
+							<div class="hover-reveal__inner" style="opacity: 0; filter: contrast(1); transform: scale(0, 1);">
+							<div class="hover-reveal__img" style='background-image: url("img/menu-hover/menu1.jpg"); transform: scale(2, 1);'></div>
+							</div>
+							</div>
+						</a>
+					</li>
+
+					<li class="nav__popup-item">
+						<a href="#about" class="nav__popup-link menu__item">
+							<span class="nav__popup-name">cégről</span>
+							<span class="nav__popup-num">/02</span>
+						</a>
+					</li>
+
+					<li class="nav__popup-item">
+						<a href="clock/clock.html" target="_blank" class="nav__popup-link menu__item">
+							<span class="nav__popup-name">óra</span>
+							<span class="nav__popup-num">/03</span>
+						</a>
+					</li>
+
+	
+					<li class="nav__popup-item">
+						<a href="galéria/galéria.html" class="nav__popup-link menu__item">
+							<span class="nav__popup-name">galéria</span>
+							<span class="nav__popup-num">/04</span>
+						</a>
+					</li>
+
+					
+				</ul>
+
+			</div>
+		</div>
+
+		<div class="qr__popup">
+
+			<div class="close__popup qr__close _cursor">
+				<span class="_gradient"></span>
+				<span class="_gradient"></span>
+			</div>
+
+			<span class="bg_anim-gsap qr__popup-anim-bg"></span>
+
+			<div class="qr__popup-wrapp">
+
+				<h2 class="qr_gasp-elem">Háttérszín <span>váltáshoz</span> nyomj <br> a gombra</h2>
+
+				<div class="qr__img qr_gasp-elem">
+					<!--Háttérszín Váltás Gomb-->
+					
+					<div id="settingsModal" class="modal">
+						<div class="modal-content">
+							<span class="close" onclick="closeModal()">&times;</span>
+							<label for="backgroundColor">Háttérszín:</label>
+							<input type="color" id="backgroundColor">
+							<br>
+							<br>
+							<button onclick="applyStyles()" class="btn">Alkalmaz</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<header id="home" class="header">
+			<div class="wrapp-content">
+				<div class="content">
+					<div class="header__wrapp">
+						<div class="fon">
+							<div class="fon__wrapp">
+								<img src="img/fon.png" alt="fon">
+							</div>
+						</div>
+						<h1 class="header__title">
+							<span class="header__sp letter_one ceg">Sportautó</span>
+							<span class="header__sp letter_two">Cég</span>
+						</h1>
+
+						
+
+					</div>
+				</div>
+			</div>
+			<ul class="header__social">
+				<li class="header__social-item move_img-cursor" data-link-img="github.jpg">
+					<span class="move-img" style='background: url("img/link-hover/github.jpg") center center / cover no-repeat; top: 24px; left: 64px;'></span>
+					<a href="https://github.com/DagobertBacsi/Sportkocsi-Weboldal" target="_blank"
+						class="header__social-link _link _move_ind" rel="noopener" draggable="false">github</a>
+				</li>
+
+			</ul>
+			
+			<div class="header__scroll _cursor" style="visibility: inherit; opacity: 0.342762; transform: matrix(1, 0, 0, 1, -15, 0);">
+				<img src="img/scroll.png" alt="scroll">
+			</div>
+
+			<span class="header__qr _link _cursor move_img-cursor" data-link-img="">
+				<span class=" move-img"></span>
+				<span class="_move_ind">Beállítások</span>
+			</span>
+		</header>
+
+		
+		
+		<section id="about" class="about _padd_top-bott80">
+			<div class="wrapp-content">
+				<div class="content">
+					<div class="title">
+						<span class="title__num" data-aos="fade-left" data-aos-delay="200">/01</span>
+						<h2 class="title__h2">
+							<span class="title__h2-span" data-aos="anim_title" data-splitting>Cégünkről</span><br>
+						</h2>
+					</div>
+					<div class="about__wrapp">
+
+						<div class="about__img displacement _cursor" data-aos="fade-up">
+							<img src="img/test-b.jpg" alt="meb">
+							<img src="img/test-c.jpg" alt="mec">
+						</div>
+
+						<div class="about__txt">
+							<span class="about__fon" data-aos="fade-left" data-aos-delay="500">ppt liga</span>
+							<h3 class="about__h3"><span data-aos="fade-left" data-aos-delay="200">SportautóCég</span></h3>
+							<p class="about__descript" data-aos="fade-up">A Sportautó cégünk elkötelezett híve a sebességnek, a precizitásnak és a luxusnak.</p>
+							<p class="about__descript" data-aos="fade-up" data-aos-delay="200">Szakértői csapata magasan képzett mérnökökből és dizájnerekből áll, akik szenvedélyesen dolgoznak azon, hogy olyan sportkocsikat alkossanak, amelyek tökéletes összhangban vannak az innovációval és a vezetés élményével.</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="stack _padd_top-bott80">
+			<div class="wrapp-content">
+				<div class="content">
+					<div class="about__title">
+						<h2 class="about__title-h2" data-aos="fade-left">
+							Sportautók
+							<span class="about__title-span" data-aos="fade-left" data-aos-delay="200">
+								<span>Technológiája</span>
+							</span>
+						</h2>
+					</div>
+
+					<div class="about__stack">
+
+						<div class="about__stack-item" data-aos="fade-up">
+							<div class="about__stack-img">
+								<img src="img/stack/st1.png" alt="st1">
+							</div>
+							<div class="about__stack-txt">
+								<span class="about__stack-num">/001</span>
+								<span class="about__stack-title">Erős Motor</span>
+								<p class="about__stack-descript">A sportkocsik motorjai a legmodernebb technológiát és mérnöki újításokat ötvözik a kivételes teljesítmény érdekében.</p>
+							</div>
+						</div>
+
+						<div class="about__stack-item" data-aos="fade-up" data-aos-delay="200">
+							<div class="about__stack-img">
+								<img src="img/stack/st2.png" alt="st2">
+							</div>
+							<div class="about__stack-txt">
+								<span class="about__stack-num">/002</span>
+								<span class="about__stack-title">Kiemelkedő Fékek</span>
+								<p class="about__stack-descript">A sportkocsik rendkívül hatékony fékrendszerekkel vannak felszerelve, amelyek lehetővé teszik a vezetők számára, hogy maximális biztonságot és irányíthatóságot élvezzenek minden helyzetben.</p>
+							</div>
+						</div>
+
+						<div class="about__stack-item" data-aos="fade-up">
+							<div class="about__stack-img">
+								<img src="img/stack/st3.png" alt="st3">
+							</div>
+							<div class="about__stack-txt">
+								<span class="about__stack-num">/003</span>
+								<span class="about__stack-title">Fejlett Vezetési Módok</span>
+								<p class="about__stack-descript">A sportkocsik számos fejlett vezetési mód és vezetési segédrendszer révén kínálnak egyedülálló vezetési élményt.</p>
+							</div>
+						</div>
+
+						<div class="about__stack-item" data-aos="fade-up" data-aos-delay="200">
+							<div class="about__stack-img">
+								<img src="img/stack/st4.png" alt="st4">
+							</div>
+							<div class="about__stack-txt">
+								<span class="about__stack-num">/004</span>
+								<span class="about__stack-title">Karbon-kerámia Féktárcsák</span>
+								<p class="about__stack-descript">A sportkocsik magas teljesítményű karbon-kerámia féktárcsákkal vannak felszerelve, amelyek kivételesen hatékonyak és könnyűek.</p>
+							</div>
+						</div>
+
+						<div class="about__stack-item" data-aos="fade-up">
+							<div class="about__stack-img">
+								<img src="img/stack/st5.png" alt="st5">
+							</div>
+							<div class="about__stack-txt">
+								<span class="about__stack-num">/005</span>
+								<span class="about__stack-title">Kifinomult Aerodinamika</span>
+								<p class="about__stack-descript">A mérnökök nagy hangsúlyt fektetnek a kifinomult aerodinamikai tervezésre, hogy maximalizálják a járművek teljesítményét és stabilitását nagy sebességek esetén is.</p>
+							</div>
+						</div>
+
+						<div class="about__stack-item" data-aos="fade-up" data-aos-delay="200">
+							<div class="about__stack-img">
+								<img src="img/stack/st6.png" alt="st6">
+							</div>
+							<div class="about__stack-txt">
+								<span class="about__stack-num">/006</span>
+								<span class="about__stack-title">Intelligens Vezetési Asszisztensek</span>
+								<p class="about__stack-descript">A sportkocsik számos intelligens vezetési asszisztenssel vannak felszerelve, amelyek segítik a vezetőket a biztonságos és kényelmes vezetésben.</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="steps _padd_top-bott80">
+			<div class="wrapp-content">
+				<div class="content">
+					<div class="about__title">
+						<h2 class="about__title-h2" data-aos="fade-left">
+							Miért válassz
+							<span class="about__title-span" data-aos="fade-left" data-aos-delay="200">
+								<span>minket?</span>
+							</span>
+						</h2>
+					</div>
+					<div class="steps__wrapp">
+
+						<div class="steps__item _cursor" data-aos="fade-up">
+							<div class="steps__head active">
+								<h3><span class="steps__num">/001</span>Kivételes Teljesítmény</h3>
+								<div class="steps_open"></div>
+							</div>
+							<div class="steps__descript">
+								<div class="steps__descript-wrapp">
+									<div class="steps__descript-txt">
+										<p>A sportkocsiaink a legkorszerűbb technológiákat és mérnöki megoldásokat ötvözik, hogy kivételes teljesítményt nyújtsanak minden vezetési körülmények között.</p>
+									</div>
+									<div class="steps__descript-img">
+										<img src="img/step/step1.png" alt="step1">
+									</div>
+								</div>
+							</div>
+							<span class="steps__border _gradient"></span>
+						</div>
+
+						<div class="steps__item _cursor" data-aos="fade-up">
+							<div class="steps__head">
+								<h3><span class="steps__num">/002</span>Kiemelkedő Minőség</h3>
+								<div class="steps_open"></div>
+							</div>
+							<div class="steps__descript">
+								<div class="steps__descript-wrapp">
+									<div class="steps__descript-txt">
+										<p>Minden egyes részletre kiterjedő figyelem és gondos munka jellemzi a sportkocsik gyártását, így garantálva a kifogástalan minőséget és megbízhatóságot.</p>
+									</div>
+									<div class="steps__descript-img">
+										<img src="img/step/step2.png" alt="step2">
+									</div>
+								</div>
+							</div>
+							<span class="steps__border _gradient"></span>
+						</div>
+
+						<div class="steps__item _cursor" data-aos="fade-up">
+							<div class="steps__head">
+								<h3><span class="steps__num">/003</span>Egyedi Design</h3>
+								<div class="steps_open"></div>
+							</div>
+							<div class="steps__descript">
+								<div class="steps__descript-wrapp">
+									<div class="steps__descript-txt">
+										<p>Az egyedi design és az exkluzív stílus a sportkocsik alapvető jellemzői, amelyek egyedülálló megjelenést és különleges élményt nyújtanak minden vezető számára.</p>
+									</div>
+									<div class="steps__descript-img">
+										<img src="img/step/step3.png" alt="step3">
+									</div>
+								</div>
+							</div>
+							<span class="steps__border _gradient"></span>
+						</div>
+
+						<div class="steps__item _cursor" data-aos="fade-up">
+							<div class="steps__head">
+								<h3><span class="steps__num">/004</span>Kiváló Ügyfélszolgálat</h3>
+								<div class="steps_open"></div>
+							</div>
+							<div class="steps__descript">
+								<div class="steps__descript-wrapp">
+									<div class="steps__descript-txt">
+										<p>A cégünk elkötelezett amellett, hogy ügyfeleinek a legmagasabb szintű kiszolgálást és támogatást nyújtsa minden egyes vásárlás és utáni élmény során.</p>
+									</div>
+									<div class="steps__descript-img">
+										<img src="img/step/step4.png" alt="step4">
+									</div>
+								</div>
+							</div>
+							<span class="steps__border _gradient"></span>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		
+
+		<section id="contact" class="contact _padd_top-bott80">
+			<div class="wrapp-content">
+				<div class="content">
+					<div class="title">
+						<span class="title__num" data-aos="fade-left" data-aos-delay="200">/02</span>
+						<h2 class="title__h2"><span class="title__h2-span" data-aos="anim_title"
+								data-splitting>Kapcsolat</span></h2>
+					</div>
+
+					<div class="form__wrapp">
+						<form id="form__contact" action="#" class="form__enter">
+
+							<label for="name" class="form__label _cursor" data-aos="fade-up">
+								<span class="input_line"></span>
+								<input id="name" type="text" name="name" class="form__input form_style"
+									placeholder="Név*" required>
+								<span class="input-placeholder">Név*</span>
+							</label>
+
+							<label for="email" class="form__label _cursor" data-aos="fade-up">
+								<span class="input_line"></span>
+								<input id="email" type="email" name="mail" class="form__input form_style"
+									placeholder="E-mail*" required>
+								<span class="input-placeholder">E-mail*</span>
+							</label>
+
+							<label for="message" class="form__label _cursor" data-aos="fade-up">
+								<span class="input_line"></span>
+								<textarea name="message" id="message" class="form__input form__message form_style"
+									placeholder="Üzenet"></textarea>
+								<span class="input-placeholder">Üzenet</span>
+							</label>
+							<input type="hidden" name="küldés" value="Сообщение отправлено с формы контактов!">
+
+							<button type="submit" class="form__submit form_style _cursor"
+								data-aos="fade-up">küldés</button>
+
+						</form>
+					</div>
+
+					<div class="contact__email">
+
+						<span class="contact__email-title"><span data-aos="anim_title">Keress fel minket</span></span>
+						<a href="mailto:sportkocsiceg@gmail.com" class="contact__email-link _link move_img-cursor"
+							data-link-img="gmail.jpg">
+							<span class="move-img"></span>
+							<span class="_move_ind" data-aos="fade-left">sportkocsiceg@gmail.com</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="wrapp-content">
+				<div class="content">
+					<div class="footer__wrapp">
+						<div class="footer__block">
+							<div class="footer__block-wrapp">
+								<span class="logo">ppt liga</span>
+								<ul class="footer__social">
+									<li class="footer__item move_img-cursor" data-link-img="github.jpg">
+										<span class="move-img"></span>
+										<a href="https://github.com/DagobertBacsi/Sportkocsi-Weboldal" class="footer__link _link _move_ind"
+											target="_blank">github</a>
+									</li>
+								</ul>
+							</div>
+							
+						</div>
+						<div class="footer__copyright">
+							<span>© PPT Liga 2024</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<svg class="cursor" width="100" height="100" viewBox="0 0 140 140">
+		<defs>
+			<filter id="filter-1" x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox">
+				<feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="10" result="warp"></feTurbulence>
+				<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="60" in="SourceGraphic" in2="warp">
+				</feDisplacementMap>
+			</filter>
+		</defs>
+		<circle class="cursor__inner" cx="70" cy="70" r="60"></circle>
+	</svg>
+
+	<!-- script -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/three.min.js"></script>
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/hover-effect.umd.js"></script>
+	<script src="js/cursor-hover.js"></script>
+	<script src="js/menu-hover.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/circleType.min.js"></script>
+	<script src="js/splitting.min.js"></script>
+	<script src="js/js.js"></script>
+	<script type="text/javascript">
+		//preloader
+		const SETTINGS = {
+			rebound: {
+				tension: 2,
+				friction: 7
+			},
+			spinner: {
+				id: 'spinner',
+				radius: 170,
+				sides: 3,
+				depth: 9,
+				colors: {
+					background: '#f0f0f0',
+					stroke: null,
+					base: '#222',
+					child: '#f0f0f0'
+				},
+				alwaysForward: false,
+				restAt: null,
+				renderBase: true
+			}
+		};
+
+		// circle text
+		function circleType() {
+
+			$(window).scroll(function () {
+
+				let offset = $(window).scrollTop();
+				offset = offset * 0.4;
+				$('.circular-text').css({
+					"-moz-transform": "rotate(" + offset + "deg)",
+					"-webkit-transform": "rotate(" + offset + "deg)",
+					"-o-transform": "rotate(" + offset + "deg)",
+					"-ms-transform": "rotate(" + offset + "deg)",
+					"transform": "rotate(" + offset + "deg)",
+				});
+			});
+		}
+		circleType();
+
+		//hover-work
+		Array.from(document.querySelectorAll('.displacement')).forEach((e) => {
+			const imgs = Array.from(e.querySelectorAll('img'));
+			new hoverEffect({
+				parent: e,
+				intensity: 0.3,
+				image1: imgs[0].getAttribute('src'),
+				image2: imgs[1].getAttribute('src'),
+				displacementImage: 'img/displacement/displacement.jpg'
+			});
+		})
+	</script>
+	<script src="js/preloader.js"></script>
+	<script src="options.js"></script>
+	<!-- /script END -->
+</body>
+</html>
